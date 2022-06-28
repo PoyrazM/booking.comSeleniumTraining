@@ -31,8 +31,8 @@ public class DriverPage {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         System.out.println("*****BROWSER IS STARTING*****");
-        String actualTitle = "Booking.com | Resmi site | Oteller, uçak biletleri, araç kiralama ve konaklamalar";
-        String expectedTitle = driver.getTitle();
+        String expectedTitle = "Booking.com | Resmi site | Oteller, uçak biletleri, araç kiralama ve konaklamalar";
+        String actualTitle = driver.getTitle();
         Assert.assertEquals(actualTitle,expectedTitle," Titles are not matching! ");
     }
 
