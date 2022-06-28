@@ -33,7 +33,7 @@ public class DriverPage {
         System.out.println("*****BROWSER IS STARTING*****");
         String actualTitle = "Booking.com | Resmi site | Oteller, uçak biletleri, araç kiralama ve konaklamalar";
         String expectedTitle = driver.getTitle();
-        Assert.assertEquals(actualTitle,expectedTitle," Titles is not matching! ");
+        Assert.assertEquals(actualTitle,expectedTitle," Titles are not matching! ");
     }
 
     @BeforeTest
